@@ -41,6 +41,7 @@ userFoodGuess();
 userNumberGuess();
 userAnimalGuess();
 
+
 function userNameGuess()
 {
   var userGuessMyName = prompt("Is my name Blake?");
@@ -132,7 +133,7 @@ function userNumberGuess()
 {
   var userGuessNumber = prompt("Let's guess a number! Pick a number from 1-100.");
   console.log('userGuessNumber :', userGuessNumber);
-  for (var i = 1; i < 5; i++)
+  for (var i = 1; i < 4; i++)
   {
     if (userGuessNumber < myNumber)
     {
@@ -150,8 +151,12 @@ function userNumberGuess()
     }
     else
     {
-      console.log("break");
-      break;
+      while(i = 4)
+      {
+      alert("Sorry the correct answer was " + myNumber);
+      }
+      //console.log("break");
+      //break;
     }
   }
 }
@@ -176,7 +181,7 @@ function userAnimalGuess()
       userGuessAnimal = prompt("No match! Try again. Attempt: " + a + "/6");
       if (a == 6)
       {
-        alert("Sorry, you ran out of guesses...Maybe next time .The correct answers were Platypus, Snow Leopard, Hummingbird, and Mongoose! Your total score was: " + userScore + "Great work!");
+        alert("Sorry, you ran out of guesses...Maybe next time .The correct answers were Platypus, Snow Leopard, Hummingbird, and Mongoose! Your total score was: " + userScore + " Great work!");
       }
       else
         console.log("Incorrect");
