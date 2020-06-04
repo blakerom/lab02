@@ -38,6 +38,8 @@ userStateGuess();
 userCollegeGuess();
 userColorGuess();
 userFoodGuess();
+userNumberGuess();
+
 
 function userNameGuess()
 {
