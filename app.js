@@ -31,6 +31,13 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
 // }
 
 // function userPromptFunction() {
+
+nameOfUser();
+userNameGuess();
+userStateGuess();
+
+function userNameGuess()
+{
   var userGuessMyName = prompt("Is my name Blake?");
   console.log('userGuessMyName :', userGuessMyName);
   var nameGuess = userGuessMyName.toLowerCase();
@@ -43,7 +50,10 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
   {
     alert("Actually, my name is Blake. Nice to meet you!");
   }
+}
 
+function userStateGuess()
+{
   var userGuessMyState = prompt("Was I born in Washington State?");
   console.log('userGuessMyState :', userGuessMyState);
   var stateGuess = userGuessMyState.toLowerCase();
@@ -56,7 +66,10 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
   {
     alert("You were incorrect, I was born in California.");
   }
+}
 
+function userCollegeGuess()
+{
   var userGuessMyCollege = prompt("Did I attend college?");
   console.log('userGuessMyCollege :', userGuessMyCollege);
   var collegeGuess = userGuessMyCollege.toLowerCase();
@@ -69,7 +82,10 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
   {
     alert("Actually, I attended a community college.");
   }
+}
 
+function userColorGuess()
+{
   var userGuessMyColor = prompt("Is my favorite color green?");
   console.log('userGuessMyColor :', userGuessMyColor);
   var colorGuess = userGuessMyColor.toLowerCase();
@@ -82,7 +98,10 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
   {
     alert("You were incorrect, my favorite color is blue.");
   }
+}
 
+function userFoodGuess()
+{
   var userGuessMyFood = prompt("Is my favorite food pizza?");
   console.log('userGuessMyFood :', userGuessMyFood);
   var foodGuess = userGuessMyFood.toLowerCase();
@@ -95,11 +114,17 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
   {
     alert("Actually, my favorite food is chicky nuggies.");
   }
+}
 
+function nameOfUser()
+{
   var userName = prompt("What is your name?");
   console.log('userName :', userName);
   alert("Welcome " + userName + ". Please enjoy the site and have a lovely day.");
+}
 
+function userNumberGuess()
+{
   var userGuessNumber = prompt("Let's guess a number! Pick a number from 1-100.");
   console.log('userGuessNumber :', userGuessNumber);
   for (var i = 1; i < 5; i++)
@@ -124,7 +149,10 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
       break;
     }
   }
+}
 
+function userAnimalGuess()
+{
   var userGuessAnimal = prompt("Now try to guess an animal. There are 4 possible answers. Hint: One has wings, one is quick, one is amphibious, and one is cold.");
   console.log("userGuessAnimal :", userGuessAnimal);
   for (var a = 1; a < 7; a++)
@@ -149,4 +177,5 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
         console.log("Incorrect");
     }
   }
+}
 // }
