@@ -35,6 +35,7 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
 nameOfUser();
 userNameGuess();
 userStateGuess();
+userCollegeGuess();
 
 function userNameGuess()
 {
