@@ -39,7 +39,7 @@ userCollegeGuess();
 userColorGuess();
 userFoodGuess();
 userNumberGuess();
-
+userAnimalGuess();
 
 function userNameGuess()
 {
