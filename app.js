@@ -37,6 +37,7 @@ userNameGuess();
 userStateGuess();
 userCollegeGuess();
 userColorGuess();
+userFoodGuess();
 
 function userNameGuess()
 {
