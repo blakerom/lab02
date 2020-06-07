@@ -9,6 +9,17 @@ var myNumber = '12';
 var userScore = 0;
 // ========================Array=========================//
 var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
+// =======================Function Calls ===================//
+
+nameOfUser();
+userNameGuess();
+userStateGuess();
+userCollegeGuess();
+userColorGuess();
+userFoodGuess();
+userNumberGuess();
+userAnimalGuess();
+
 // ========================Functions===================== // *Prompts
 // userTypeFunction();
 
@@ -31,16 +42,6 @@ var answersArray = ["platypus", "snow leopard", "hummingbird", "mongoose"];
 // }
 
 // function userPromptFunction() {
-
-nameOfUser();
-userNameGuess();
-userStateGuess();
-userCollegeGuess();
-userColorGuess();
-userFoodGuess();
-userNumberGuess();
-userAnimalGuess();
-
 
 function userNameGuess()
 {
@@ -151,13 +152,18 @@ function userNumberGuess()
     }
     else
     {
-      while(i = 4)
-      {
-      alert("Sorry the correct answer was " + myNumber);
-      }
-      //console.log("break");
-      //break;
+      break;
     }
+  }
+
+  if (i = 4 && userGuessNumber === myNumber)
+  {
+    alert("Winner! Good work.");
+    userScore += 100;
+  }
+  else
+  {
+    alert("Sorry the correct answer was " + myNumber);
   }
 }
 
@@ -167,18 +173,18 @@ function userAnimalGuess()
   console.log("userGuessAnimal :", userGuessAnimal);
   for (var a = 1; a < 7; a++)
   {
-    // console.log(a);
+    console.log(a);
     var n = answersArray.includes(userGuessAnimal);
-    // console.log(n);
+    console.log(n);
     if (n == true)
     {
       userScore += 100;
-      alert("Wow! You guessed it! Your total score was: " + userScore);
+      alert("Wow! You guessed " + userGuessAnimal + "! Your total score was: " + userScore);
       break;
     }
     else
     {
-      userGuessAnimal = prompt("No match! Try again. Attempt: " + a + "/6");
+      userGuessAnimal = prompt("No match! Try again. Hints were: One has wings, one is quick, one is amphibious, and one is cold. Attempt: " + a + "/6");
       if (a == 6)
       {
         alert("Sorry, you ran out of guesses...Maybe next time .The correct answers were Platypus, Snow Leopard, Hummingbird, and Mongoose! Your total score was: " + userScore + " Great work!");

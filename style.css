@@ -17,9 +17,12 @@ body {
   padding: 10px;
 }
 h1 {
-  color: rgb(8, 129, 189);
+  color: rgb(94, 87, 45);
   border-bottom: 1px solid #000;
 }
 h3 {
   color: #25283B;
+}
+footer p {
+  font-size: 14px;
 }
